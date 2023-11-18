@@ -1,0 +1,208 @@
+﻿<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+</head>
+
+
+
+<body>
+    <br>
+    <style>
+
+        nav { /*整個上方區塊*/
+            color: #F00;
+            min-width: 100%;
+            margin: 0px;
+            background-color: #000;
+        }
+
+            nav ul { /*第一層選單區域*/
+                padding: 0;
+                margin: 0;
+                list-style: none;
+                position: relative;
+                margin: 0px;
+            }
+
+                nav ul li { /*第一層選單項目*/
+                    display: inline-block;
+                    float: none;
+                    white-space: nowrap;
+                }
+
+                    nav ul li a { /*最上層選單樣式*/
+                        display: block;
+                        padding: 0 10px;
+                        color: #eee;
+                        font-size: 20px;
+                        line-height: 30px;
+                        text-decoration: none;
+                        background-color: #000;
+                    }
+
+                    nav ul li ul a { /*第一層子選單樣式*/
+                        background-color: #1e90ff;
+                    }
+
+                    nav ul li ul li ul a { /*第二層子選單樣式*/
+                        background-color: #0097D8;
+                    }
+
+            nav a:hover { /*整個選單連結滑鼠移上去時的樣式*/
+                color: #FFF;
+                background-color: #555;
+                transition: all .2s ease;
+            }
+
+            nav ul ul { /*第一層子選單展開*/
+                position: absolute;
+                transition-property: transform;
+                transition-duration: 20ms;
+                transition-timing-function: ease-in;
+                transition-delay: 200ms;
+                transform: scale(1,0);
+                transform-origin: top center;
+            }
+
+
+
+            nav ul li:hover > ul { /*選單滑鼠移上去的樣式變化*/
+                /*display: inherit;*/
+                transition: all 300ms ease;
+                transform: scale(1,1);
+            }
+
+            nav ul ul li { /*第一層子選單的樣式*/
+                min-width: 170px;
+                display: list-item;
+                position: relative;
+            }
+
+            nav ul ul ul { /*第二層子選單的區塊樣式*/
+                position: absolute;
+                top: 0;
+                left: 100%;
+            }
+    </style>
+
+
+
+
+
+
+    <nav>
+        <ul>
+            <li><a href="#"><a href="home.html" target="_blank">主頁</a></a></li>
+
+            <li>
+                <a href="#">遊戲列表</a>
+                <ul>
+                    <li><a href="game.html" target="_blank">一統天下</a></li>
+                    <li><a href="list.html" target="_blank">傳說對決</a></li>
+                    <li><a href="Genshin.html" target="_blank">原神啟動</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#"> <a href="media.html" target="_blank">新聞專欄</a></a>
+
+            </li>
+            <li>
+                <a href="#"><a href="music.html" target="_blank">音闕詩聽</a></a>
+
+            </li>
+            <li>
+                <a href="#"><a href="counter.html" target="_blank">人物專欄</a></a>
+
+            </li>
+            <li>
+                <a href="#"><a href="calender.html" target="_blank">日曆</a></a>
+
+            </li>
+            <li>
+                <a href="#"><a href="form.html" target="_blank">餐後滿意度調查表</a></a>
+
+            </li>
+        </ul>
+    </nav>
+
+
+
+    <br>
+
+    <font size="5">
+        人物介紹列表:<br>
+        <a href="#C1">跳轉到 馬龍</a><br>
+        <a href="#C2">跳轉到 盧卡·東契奇(Luka Dončić)</a><br>
+        <a href="#C3">跳轉到 大谷翔平(Shohei Ohtani)</a><br>
+    </font>
+    <br>
+    <br>
+    <h2 id="C1">馬龍</h2>
+
+    <font size="4"><font color="blue">The Captain, the Dragon, the Dictator, the greatest of all time ♥️</font> </font> <br>
+    <img src="當代中國-中國國家隊-馬龍_x1.jpg" alt="logo" width="300" "height=" 300" /><br>
+    中文名:馬龍<br>外文名:Ma Long
+    <br>外號:六邊形戰士  <br>國籍:中國 <br>出生日期:1988年10月20日<br> 運動項目:乒乓球<br>專業特點:右手橫板兩面反膠弧圈球結合快攻打法<br>主要獎項:
+    2012、2015世界盃男單冠軍<br>
+    2008、2009、2011、2015、2016、2020總決賽六冠<br>
+    2009、2012、2013年亞錦賽男單三冠<br>
+    2008、2009、2011、2014年亞洲盃男單四冠<br>
+    2016年里約奧運會男單、男團冠軍<br>
+    2020年東京奧運會男單、男團冠軍<br>
+
+    <img src="6351b094e4b03aa1237c35b3.jpg" alt="logo" width="400" "height=" 200" /><br><br><br>
+    <h2 id="C2">盧卡·東契奇(Luka Dončić)</h2>
+    <img src="skysports-nba-luka-doncic-dallas-mavericks_5554205.jpg" alt="logo" width="400" "height=" 200" /><br>
+
+    中文名:盧卡·東契奇<br>外文名:Luka Dončić<br>外號:盧卡魔法(Luka Magic)
+    <br>國籍:斯洛文尼亞<br>出生日期:1999年2月28日<br>畢業院校:歐洲大學皇家馬德里研究生院 <br>運動項目:籃球 <br>所屬球隊:達拉斯獨行俠<br>
+
+    位置: 後衞/前鋒<br> 慣用手: 右手<br> 號碼: 77號 <br>NBA選秀: 2018年首輪第3位被老鷹隊選中<br>
+    專業特點: 球風全面，傳控意識佳，無懼大場面 <br>
+    主要獎項:2017年歐錦賽冠軍<br>
+    2018年歐洲冠軍聯賽冠軍、歐冠聯賽MVP及最終四強MVP<br>
+    2018年西甲冠軍、MVP<br>
+    2018-19賽季NBA最佳新秀、NBA最佳新秀陣容一陣<br>
+    連續4屆NBA全明星陣容（2020-23）<br>
+    連續4屆NBA最佳陣容第一陣容（2020-23）<br>
+    <img src="fit-BB4vpYP9pn-945x495.jpg" alt="logo" width="400" "height=" 200" /><br><br><br>
+
+
+    <h2 id="C3">大谷翔平(Shohei Ohtani)</h2>
+    <img src="phpf6XTbr.jpg" alt="logo" width="400" "height=" 200" /><br>
+
+    中文名:大谷翔平<br>
+    外文名:おおたに しょうへい（Shohei Ohtani）<br>外號:Sho-time<br>
+    國籍:日本<br>
+    出生日期:1994年07月05日<br>畢業院校:日本花卷東高等學校<br>運動項目:棒球
+    <br>所屬運動隊:北海道日本火腿鬥士隊(2013~2018)洛杉磯天使隊(2018~2023)
+    <br>投打習慣:右投左打
+    <br>守備位置:投手，外野手<br>最快球速:165km/h<br>
+    選秀:2012北海道日本火腿鬥士隊<br>
+    主要獎項:<br>
+    日本職棒<br>日本大賽冠軍（2016年）<br>
+    5×日本職棒全明星賽（2013年–2017年）<br>
+    太平洋聯盟最有價值球員（2016年）<br>
+    MLB大聯盟<br>
+    3×全明星賽（2021年－2023年）<br>
+    主席歷史成就獎（2021年）<br>
+    2×大聯盟年度第一隊（2021年、2022年）<br>
+    2×大聯盟年度第二隊（2021年、2022年）<br>
+    美聯最有價值球員獎（2021年）<br>
+    美聯新人王（2018年）<br>
+    2×銀棒獎（2021年、2023年）<br>
+    於2019年6月13日達成完全打擊<br>
+    國際賽<br />
+    世界棒球經典賽最有價值球員獎 (2023年）<br>
+    團隊-世界棒球經典賽冠軍（2023年）<br>
+    <img src="2fe634987ffe6bdfdefd4c4776bb76de.jpg" alt="logo" width="400" "height=" 200" /><br><br><br>
+</body>
+</html>
