@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+       <body>
+           <br>
+
+           <style>
+
+               nav { /*整個上方區塊*/
+                   color: #F00;
+                   min-width: 100%;
+                   margin: 0px;
+                   background-color: #000;
+               }
+
+                   nav ul { /*第一層選單區域*/
+                       padding: 0;
+                       margin: 0;
+                       list-style: none;
+                       position: relative;
+                       margin: 0px;
+                   }
+
+                       nav ul li { /*第一層選單項目*/
+                           display: inline-block;
+                           float: none;
+                           white-space: nowrap;
+                       }
+
+                           nav ul li a { /*最上層選單樣式*/
+                               display: block;
+                               padding: 0 10px;
+                               color: #eee;
+                               font-size: 20px;
+                               line-height: 30px;
+                               text-decoration: none;
+                               background-color: #000;
+                           }
+
+                           nav ul li ul a { /*第一層子選單樣式*/
+                               background-color: #1e90ff;
+                           }
+
+                           nav ul li ul li ul a { /*第二層子選單樣式*/
+                               background-color: #0097D8;
+                           }
+
+                   nav a:hover { /*整個選單連結滑鼠移上去時的樣式*/
+                       color: #FFF;
+                       background-color: #555;
+                       transition: all .2s ease;
+                   }
+
+                   nav ul ul { /*第一層子選單展開*/
+                       position: absolute;
+                       transition-property: transform;
+                       transition-duration: 20ms;
+                       transition-timing-function: ease-in;
+                       transition-delay: 200ms;
+                       transform: scale(1,0);
+                       transform-origin: top center;
+                   }
+
+
+
+                   nav ul li:hover > ul { /*選單滑鼠移上去的樣式變化*/
+                       /*display: inherit;*/
+                       transition: all 300ms ease;
+                       transform: scale(1,1);
+                   }
+
+                   nav ul ul li { /*第一層子選單的樣式*/
+                       min-width: 170px;
+                       display: list-item;
+                       position: relative;
+                   }
+
+                   nav ul ul ul { /*第二層子選單的區塊樣式*/
+                       position: absolute;
+                       top: 0;
+                       left: 100%;
+                   }
+           </style>
+
+
+
+
+
+
+           <nav>
+               <ul>
+                   <li><a href="#"><a href="home.html" target="_blank">主頁</a></a></li>
+
+                   <li>
+                       <a href="#">遊戲列表</a>
+                       <ul>
+                           <li><a href="game.html" target="_blank">一統天下</a></li>
+                           <li><a href="list.html" target="_blank">傳說對決</a></li>
+                           <li><a href="Genshin.html" target="_blank">原神啟動</a></li>
+                       </ul>
+                   </li>
+                   <li>
+                       <a href="#"> <a href="media.html" target="_blank">新聞專欄</a></a>
+
+                   </li>
+                   <li>
+                       <a href="#"><a href="music.html" target="_blank">音闕詩聽</a></a>
+
+                   </li>
+                   <li>
+                       <a href="#"><a href="counter.html" target="_blank">人物專欄</a></a>
+
+                   </li>
+                   <li>
+                       <a href="#"><a href="calender.html" target="_blank">日曆</a></a>
+
+                   </li>
+                   <li>
+                       <a href="#"><a href="form.html" target="_blank">留言板與表單</a></a>
+
+                   </li>
+               </ul>
+           </nav>
+
+
+
+
+
+
+
+           <br>
+           <font size="5"><font color="red">萌新黎玥醬の網站開發日記</font> </font><br><br>
+           <font size="5"><font color="orange">♪ Sick enough to die</font> </font><br>
+           <audio src="Sick Enough to Die (Feat. Mellow).mp3" autoplay controls loop></audio><br>
+           創作者簡介:<br>
+           <img src="1be8344729610ee9.jfif" alt="logo" width="150" "height=" 100" /><br>
+           <font size="5">鍾陳祐 </font><br>
+           身高:186cm<br>
+           體重:75kg<br>
+           年齡:19y<br>
+           生日:2004/7/31<br>
+           星座:獅子座<br>
+           學歷:就讀於<a href="https://cse.ntou.edu.tw/">國立臺灣海洋大學資訊工程學系(NTOU CSIE)</a><br>
+           社群軟體:<br>
+
+           Fb:<font color="purple">鍾陳祐</font>
+           <a href="https://www.facebook.com/profile.php?id=100041287276614">點擊此處前往</a>
+           <br>IG:<font color="purple">andrew._.0731</font>
+           <a href="https://www.instagram.com/andrew._.0731/">點擊此處前往</a><br>
+           Tiktok:<font color="purple">liyue_0731</font>
+           <a href="https://www.tiktok.com/@liyue_0731">點擊此處前往</a><br>
+           email: andrew.virtual01@gmail.com<br>
+
+
+
+       </body>
+</html>
